@@ -6,9 +6,8 @@ def run_guessing_game
       puts "Goodbye!"
       break
     else
-      guess = guess.to_i
       number = rand(1..6)
-      if guess == number
+      if guess.to_i == number
         puts "You guessed the correct number!"
       else
         puts "The computer guessed #{number}."
