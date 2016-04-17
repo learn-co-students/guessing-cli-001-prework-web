@@ -1,6 +1,8 @@
 # Code your solution here!
 require 'pry'
 
+
+
 def run_guessing_game
  puts "Guess a number between 1 and 6."
  rnum = rand(1..6)
@@ -8,11 +10,14 @@ def run_guessing_game
 
 until input == "exit"
   input= gets.chomp
-
-  if input== "exit"
+  if input != "exit"
+    input=input.to_i
+  end
+  case input
+  when "exit"
     puts "Goodbye!"
     break
-  elsif input.to_i == rnum
+  when rnum
   puts "You guessed the correct number!"
   else
   puts "The computer guessed #{rnum}."
