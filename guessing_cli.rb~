@@ -2,8 +2,8 @@
 def run_guessing_game
 	while 1 < 2
 		puts "Guess a number between 1 and 6."
-		num = rand(1..6).to_s
 		guess = gets.chomp
+		num = (rand(6)+1).to_s
 		if guess == "exit"
 			puts "Goodbye!"
 			break
