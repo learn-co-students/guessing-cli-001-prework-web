@@ -1,5 +1,3 @@
-
-
 def run_guessing_game
 correct_num = rand(1..6).to_s
 
@@ -10,7 +8,6 @@ guess = gets.chomp
       puts "You guessed the correct number!"
       guess = "exit"
      elsif guess == "exit"
-      
       break
     else puts "The computer guessed #{correct_num}."
     end
